@@ -140,3 +140,29 @@ button:hover {
   border-color: #cfd6ff;
   font-weight: 600;
 }
+
+
+/* ===== FIX узких экранов ===== */
+
+/* оставляем место справа под панель */
+@media (min-width: 901px) {
+  .container {
+    margin-right: 260px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .side-panel {
+    position: relative;   /* было fixed */
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    border-top: 1px solid #eee;
+  }
+
+  .container {
+    margin: 20px;
+  }
+
+}
